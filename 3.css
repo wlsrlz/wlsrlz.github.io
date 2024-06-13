@@ -1,0 +1,1119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+@font-face {
+    font-family: lex;
+    src: url(LexendGiga-VariableFont_wght.ttf);
+}
+
+@font-face{
+    font-family: big;
+    src: url(LexendTera-Bold.ttf)
+}
+
+@font-face {
+    font-family: noto;
+    src: url(NotoSansKR-Medium.ttf);
+}
+
+@font-face{
+    font-family: pre;
+    src: url(Pretendard-Medium.otf)
+}
+
+#viewport{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: inline;
+    top: 0px;
+    left: 0px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    background-color: white;
+    font-family: noto;
+}
+
+.item {
+    background-color: white;
+    color: black;
+    margin: 4px;
+    top:50%;
+    left: 100px;
+    position: absolute;
+    font-family: lex;
+    font-size: 32px;
+    transform: translateY(-50%);
+  }
+
+  
+
+#viewport > p{
+    margin-right: 100px;
+}
+
+#menu{
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    display: flex;
+    justify-content: flex-end;
+    transform: translateY(-50%);
+}
+
+#menu > p{
+    margin-left: 100px;
+}
+
+.item a, #menu p a {
+
+    transition: color 0.3s ease;
+}
+
+
+.hm:link{
+    color:black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.hm:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.hm:hover{
+    color: #FC4B22;
+    text-decoration: none;
+}
+
+.pf:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+
+}
+
+.pf:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.pf:hover {
+    color:#FC4B22;
+    text-decoration: none;
+}
+
+.wk:link{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.wk:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.wk:hover{
+    color: #FC4B22;
+    text-decoration: none;
+}
+
+
+#text{
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 160px;
+    left: 100px;
+    font-family: big;
+    font-size: 72px;
+    line-height: 110px;
+}
+
+.end{
+     color: white;
+    text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#dcu{
+    position:absolute;
+    width: auto;
+    height: auto;
+    top: 665px;
+    right:100px;
+    font-size: 24px;
+    font-family: noto;
+}
+
+#work{
+    position: absolute;
+    width: 676.14px;
+    height: 100px;
+    top: 1150px;
+    left: 100px;
+    font-size: 64px;
+    font-family: big;
+    color: black;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#gr{
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 1280px;
+    left: 100px;
+    font-size: 24px;
+    font-family: noto;
+    color: black;
+}
+
+#line1{
+    position:absolute;
+    width: 1340px;
+    height: 0px;
+    top: 1325px;
+    left: 100px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+
+/*본문내용입니당*/
+#shark_pic {
+    position: absolute;
+    display: inline-flex;
+    width: 440px;
+    height: 571.0469314079422px;
+    top: 1345px;
+    left: 100px;
+}
+
+.shark_over {
+    left: 0px;
+    font-size: 24px;
+}
+
+.shark_pic {
+    float: left;
+    position: relative;
+    width: 25%;
+    padding-bottom: 25%;
+}
+
+.shark_over {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 00px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0);
+    font-size: 48px;
+    font-family: pre;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.shark_over:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+}
+
+.shark_pic > img {
+    position: absolute;
+    width: 100%;
+}
+
+/* a 태그의 기본 스타일 제거 */
+#shark_link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wow{
+    margin-left: 0px;
+}
+
+
+
+
+
+#piano_pic {
+    position: absolute;
+    display: inline-flex;
+    width: 440px;
+    height: 571.0469314079422px;
+    top: 1345px;
+    left: 550px;
+}
+
+.piano_over {
+    left: 0px;
+    font-size: 24px;
+}
+
+.piano_pic {
+    float: left;
+    position: relative;
+    width: 25%;
+    padding-bottom: 25%;
+}
+
+.piano_over {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0);
+    font-size: 48px;
+    font-family: pre;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.piano_over:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+}
+
+.piano_pic > img {
+    position: absolute;
+    width: 100%;
+}
+
+/* a 태그의 기본 스타일 제거 */
+#piano_link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+#cat_pic {
+    position: absolute;
+    display: inline-flex;
+    width: 440px;
+    height: 571.0469314079422px;
+    top: 1345px;
+    left: 1000px;
+}
+
+.cat_over {
+    left: 0px;
+    font-size: 24px;
+}
+
+.cat_pic {
+    float: left;
+    position: relative;
+    width: 25%;
+    padding-bottom: 25%;
+}
+
+.cat_over {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 00px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0);
+    font-size: 48px;
+    font-family: pre;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.cat_over:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+}
+
+.cat_pic > img {
+    position: absolute;
+    width: 100%;
+}
+
+/* a 태그의 기본 스타일 제거 */
+#cat_link {
+    text-decoration: none;
+    color: inherit;
+}
+
+#emo_pic{
+    position: absolute;
+    display: inline-flex;
+    width: 440px;
+    height: 571.0469314079422px;
+    top: 2000px;
+    left: 100px;
+}
+
+.emo_over {
+    left: 0px;
+    font-size: 24px;
+}
+
+.emo_pic {
+    float: left;
+    position: relative;
+    width: 25%;
+    padding-bottom: 25%;
+}
+
+.emo_over {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0);
+    font-size: 48px;
+    font-family: pre;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.emo_over:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+}
+
+.emo_pic > img {
+    position: absolute;
+    width: 100%;
+}
+
+/* a 태그의 기본 스타일 제거 */
+#emo_link {
+    text-decoration: none;
+    color: inherit;
+}
+
+#disa_pic{
+    position: absolute;
+    display: inline-flex;
+    width: 440px;
+    height: 571.0469314079422px;
+    top: 2000px;
+    left: 550px;
+}
+
+.disa_over {
+    left: 0px;
+    font-size: 24px;
+}
+
+.disa_pic {
+    float: left;
+    position: relative;
+    width: 25%;
+    padding-bottom: 25%;
+}
+
+.disa_over {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0);
+    font-size: 48px;
+    font-family: pre;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.disa_over:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+}
+
+.disa_pic > img {
+    position: absolute;
+    width: 100%;
+}
+
+/* a 태그의 기본 스타일 제거 */
+#disa_link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+#yooyeon_pic {
+    position: absolute;
+    display: inline-flex;
+    width: 440px;
+    height: 571.0469314079422px;
+    top: 2000px;
+    left: 1000px;
+}
+
+.yooyeon_over {
+    left: 0px;
+    font-size: 24px;
+}
+
+.yooyeon_pic {
+    float: left;
+    position: relative;
+    width: 25%;
+    padding-bottom: 25%;
+}
+
+.yooyeon_over {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0);
+    font-size: 48px;
+    font-family: pre;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.yooyeon_over:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+}
+
+.yooyeon_pic > img {
+    position: absolute;
+    width: 100%;
+}
+
+/* a 태그의 기본 스타일 제거 */
+#yooyeon_link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*여기부터 사진제목입니당*/
+#shark{
+    width: 440px;
+    height: auto;
+    position: absolute;
+    top: 1925px;
+    left: 100px;
+    font-family: noto;
+    font-size: 12px;
+    text-align: center;  
+}
+
+#piano{
+    width: 440px;
+    height: auto;
+    position: absolute;
+    top: 1925px;
+    left: 540px;
+    font-family: noto;
+    font-size: 12px;
+    text-align: center;  
+}
+
+#cat{
+    width: 440px;
+    height: auto;
+    position: absolute;
+    top: 1925px;
+    left: 1000px;
+    font-family: noto;
+    font-size: 12px;
+    text-align: center;  
+}
+
+#emo{
+    width: 440px;
+    height: auto;
+    position: absolute;
+    top: 2580px;
+    left: 100px;
+    font-family: noto;
+    font-size: 12px;
+    text-align: center;
+}
+
+#disa{
+    width: 440px;
+    height: auto;
+    position: absolute;
+    top: 2580px;
+    left: 550px;
+    font-family: noto;
+    font-size: 12px;
+    text-align: center;
+}
+
+#yooyeon{
+    width: 440px;
+    height: auto;
+    position: absolute;
+    top: 2580px;
+    left: 1000px;
+    font-family: noto;
+    font-size: 12px;
+    text-align: center;
+}
+/*사진제목 끝*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#puter{
+    width: 100%;
+    height: 320px;
+    position: relative;
+    display: block;
+    flex-direction: row;
+    bottom: -2800px;
+    right: 0px;
+    padding-left: 100px;
+    padding-top: 75px;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    font-family: noto;
+    font-size: 12px;
+}
+
+
+.put {
+    color: white;
+    font-family: lex;
+    font-size: 32px;
+    margin-bottom: 135px;
+    
+  }
+
+#line3{
+    position: absolute;
+    width: 1325px;
+    height: 0px;
+    bottom: 132px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.ins{
+    position: absolute;
+    display: inline-flex;
+    width: 43px;
+    height: 43px;
+    bottom: 200px;
+    right:100px;
+}
+
+
+@media(max-width: 1050px){
+    #dcu{
+        display: none;
+    }
+}
+
+
+/* 미디어 쿼리: 768px 이상 */
+@media (max-width: 768px) {
+    #viewport {
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        display: inline;
+        top: 0px;
+        left: 0px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+        background-color: white;
+        font-family: noto;
+    }
+
+    .item {
+        font-size: 24px; 
+        left: 30px; 
+    }
+
+    #menu {
+        font-size: 16px;
+        right: 30px;
+    }
+
+    #menu > p{
+        margin-left: 30px;
+    }
+     /*여기까지 뷰포트*/
+
+    #dcu{
+        display: none;
+    }
+
+    #text{
+        left: 30px;
+        top: 100px;
+        position: absolute;
+        width: auto;
+        height: auto;
+        font-size: 50px;
+        line-height: 90px;
+    }
+
+    #work{
+        position: absolute;
+        width: auto;
+        height: auto;
+        top: 800px;
+        left: 30px;
+        font-size: 32px;
+    }
+    
+    #gr{
+        position: absolute;
+        width: auto;
+        height: auto;
+        top: 950px;
+        left: 30px;
+        font-size: 24px;
+
+    }
+    
+    #line1{
+        position:absolute;
+        width: 678px;
+        height: 0px;
+        top: 990px;
+        left: 30px;
+        border: 1px solid rgb(0, 0, 0);
+    }
+        
+    #shark_pic{
+        position: absolute;
+        display: inline-flex;
+        width: 226px;
+        height: 293.3104693140794px;
+        top: 1050px;
+        left: 30px;
+    }
+    
+    #piano_pic{
+        position: absolute;
+        display: inline-flex;
+        width: 226px;
+        height: 293.3104693140794px;
+        top: 1050px;
+        left: 255px;
+    }
+    
+    #cat_pic{
+        position: absolute;
+        display: inline-flex;
+        width: 226px;
+        height: 293.3104693140794px;
+        top: 1050px;
+        left: 481px;
+    }
+
+    .wow{
+        margin-left: 0px;
+    }
+    
+    #shark{
+        width: 226px;
+        height: auto;
+        position: absolute;
+        top: 1345px;
+        left: 30px;
+        font-family: noto;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    #piano{
+        width: 226px;
+        height: auto;
+        position: absolute;
+        top: 1345px;
+        left: 255px;
+        font-family: noto;
+        font-size: 12px;
+        text-align: center;   
+    }
+    
+    #cat{
+        width: 226px;
+        height: auto;
+        position: absolute;
+        top: 1345px;
+        left: 481px;
+        font-family: noto;
+        font-size: 12px;
+        text-align: center;  
+    }
+
+
+    .shark_over {
+        left: 0px;
+        font-size: 24px;
+    }
+
+    .piano_over {
+        left: 0px;
+        font-size: 24px;
+    }
+
+    .cat_over {
+        left: 00px;
+        font-size: 24px;
+    }
+ 
+    #emo_pic{
+        position: absolute;
+        display: inline-flex;
+        width: 226px;
+        height: 293.3104693140794px;
+        top: 1400px;
+        left: 30px;
+    }
+
+    #disa_pic{
+        position: absolute;
+        display: inline-flex;
+        width: 226px;
+        height: 293.3104693140794px;
+        top: 1400px;
+        left: 255px;
+    }
+    
+    #yooyeon_pic{
+        position: absolute;
+        display: inline-flex;
+        width: 226px;
+        height: 293.3104693140794px;
+        top: 1400px;
+        left: 481px;
+    }
+
+    #emo{
+        width: 226px;
+        height: auto;
+        position: absolute;
+        top: 1695px;
+        left: 30px;
+        font-family: noto;
+        font-size: 12px;
+        text-align: center;  
+    }
+    
+    #disa{
+        width: 226px;
+        height: auto;
+        position: absolute;
+        top: 1695px;
+        left: 255px;
+        font-family: noto;
+        font-size: 12px;
+        text-align: center;  
+    }
+    
+    #yooyeon{
+        width: 226px;
+        height: auto;
+        position: absolute;
+        top: 1695px;
+        left: 481px;
+        font-family: noto;
+        font-size: 12px;
+        text-align: center;  
+    }
+
+    .emo_over {
+        left: 0px;
+        font-size: 24px;
+    }
+
+    .disa_over {
+        left: 0px;
+        font-size: 24px;
+    }
+
+    .yooyeon_over {
+        left: 00px;
+        font-size: 24px;
+    }
+
+        /*여기부터 푸터*/ 
+        #puter{
+            width: 100%;
+            height: 320px;
+            position: relative;
+            display: block;
+            flex-direction: row;
+            bottom: -1825px;
+            right: 0PX;
+            padding-left: 30px;
+            padding-top: 75px;
+            background-color: rgb(0, 0, 0);
+            color:white;
+            font-family: noto;
+            font-size: 12px;
+        }
+        
+        .put {
+            color: white;
+            font-family: lex;
+            font-size: 24px;
+            margin-bottom: 135px;
+            
+          }
+
+        #line3{
+            position: absolute;
+            width: 680px;
+            height: 0px;
+            bottom: 132px;
+            border: 1px solid rgb(255, 255, 255);
+        }
+        
+        .ins{
+            position: absolute;
+            display: inline-flex;
+            width: 24px;
+            height: 24px;
+            bottom: 214px;
+            right: 40px;
+        }
+}
+
+
+@media (max-width: 320px) {
+    #viewport {
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        display: inline;
+        top: 0px;
+        left: 0px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+        background-color: white;
+        font-family: noto;
+    }
+
+    .item {
+        font-size: 12px; 
+        left: 20px; 
+    }
+
+    #menu {
+        display: inline;
+        font-size: 8px;
+        left: 260px;
+    }
+
+    #menu > p{
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+     /*여기까지 뷰포트*/
+
+     #text{
+        left: 20px;
+        top: 100px;
+        font-size: 26px;
+        position: absolute;
+        width: auto;
+        height: auto;
+        line-height: 48px;
+    }
+
+    #work{
+        top: 480px;
+        left: 20px;
+        font-size: 20px;
+    }
+
+    #gr{
+        top: 560px;
+        left: 20px;
+        font-size: 14px;
+    }
+    
+    #line1{
+        position:absolute;
+        width: 280px;
+        height: 0px;
+        top: 583px;
+        left: 20px;
+        border: 1px solid rgb(0, 0, 0);
+    }
+
+    #shark{display:none;}
+    #piano{display:none;}
+    #cat{display:none;}
+    #emo{display:none;}
+    #disa{display:none;}
+    #yooyeon{display:none;}
+
+    #shark_pic{
+        flex-direction: column; /* 세로 정렬로 변경 */
+        width: 280px; /* 컨테이너의 가로 크기 조절 */
+        top: 600px;
+        left: 20px; /* 위치 자동 조정 */
+        right: 0; /* 오른쪽에 위치 */
+    }
+    /*363.39350180505414*/
+
+    #piano_pic{
+        flex-direction: column; /* 세로 정렬로 변경 */
+        width: 280px; /* 컨테이너의 가로 크기 조절 */
+        top: 963px;
+        left: 20px; /* 위치 자동 조정 */
+        right: 0; /* 오른쪽에 위치 */
+    }
+
+    #cat_pic{
+        flex-direction: column; /* 세로 정렬로 변경 */
+        width: 280px; /* 컨테이너의 가로 크기 조절 */
+        top: 1327px;
+        left: 20px; /* 위치 자동 조정 */
+        right: 0; /* 오른쪽에 위치 */
+    }
+
+    #emo_pic{
+        flex-direction: column; /* 세로 정렬로 변경 */
+        width: 280px; /* 컨테이너의 가로 크기 조절 */
+        top: 1691px;
+        left: 20px; /* 위치 자동 조정 */
+        right: 0; /* 오른쪽에 위치 */
+    }
+
+    #disa_pic{
+        flex-direction: column; /* 세로 정렬로 변경 */
+        width: 280px; /* 컨테이너의 가로 크기 조절 */
+        top: 2055px;
+        left: 20px; /* 위치 자동 조정 */
+        right: 0; /* 오른쪽에 위치 */
+    }
+
+    #yooyeon_pic{
+        flex-direction: column; /* 세로 정렬로 변경 */
+        width: 280px; /* 컨테이너의 가로 크기 조절 */
+        top: 2419px;
+        left: 20px; /* 위치 자동 조정 */
+        right: 0; /* 오른쪽에 위치 */
+    }
+
+    .shark_over {
+        left: 0px;
+        height: 363.39350180505414px;
+        font-size: 24px;
+    }
+
+    .piano_over {
+        left: 0px;
+        height: 363.39350180505414px;
+        font-size: 24px;
+    }
+
+    .cat_over {
+        left: 00px;         height: 363.39350180505414px;
+        font-size: 24px;
+    }
+    .emo_over {
+        left: 0px;        height: 363.39350180505414px;
+        font-size: 24px;
+    }
+
+    .disa_over {
+        left: 0px;        height: 363.39350180505414px;
+        font-size: 24px;
+    }
+
+    .yooyeon_over {
+        left: 00px;        height: 363.39350180505414px;
+        font-size: 24px;
+    }
+
+
+    /*여기부터 푸터*/ 
+    #puter{
+        width: 100%;
+        height: 100px;
+        position: relative;
+        display: block;
+        flex-direction: row;
+        bottom: -2850px;
+        right: 0PX;
+        padding-left: 20px;
+        padding-top: 25px;
+        background-color: rgb(0, 0, 0);
+        color:white;
+        font-family: noto;
+        font-size: 6px;
+    }
+    
+    .put {
+        color: white;
+        font-family: lex;
+        font-size: 12px;
+        margin-bottom: 30px;
+        
+      }
+    
+    #line3{
+        position: absolute;
+        width: 280px;
+        height: 0px;
+        bottom: 40px;
+        border: 1px solid rgb(255, 255, 255);
+    }
+    
+    .ins{
+        position: absolute;
+        display: inline-flex;
+        width: 12px;
+        height: 12px;
+        bottom: 60px;
+        right: 20px;
+    }
+    
+}

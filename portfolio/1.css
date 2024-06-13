@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+@font-face {
+    font-family: lex;
+    src: url(LexendGiga-VariableFont_wght.ttf);
+}
+
+@font-face{
+    font-family: big;
+    src: url(LexendTera-Bold.ttf)
+}
+
+@font-face {
+    font-family: noto;
+    src: url(NotoSansKR-Medium.ttf);
+}
+
+#viewport{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: inline;
+    top: 0px;
+    left: 0px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    background-color: white;
+    font-family: noto;
+}
+
+.item {
+    background-color: white;
+    color: black;
+    margin: 4px;
+    top:50%;
+    left: 100px;
+    position: absolute;
+    font-family: lex;
+    font-size: 32px;
+    transform: translateY(-50%);
+  }
+
+  
+
+#viewport > p{
+    margin-right: 100px;
+}
+
+#menu{
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    display: flex;
+    justify-content: flex-end;
+    transform: translateY(-50%);
+}
+
+#menu > p{
+    margin-left: 100px;
+}
+
+.item a, #menu p a {
+
+    transition: color 0.3s ease;
+}
+
+
+.hm:link{
+    color:black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.hm:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.hm:hover{
+    color: #FC4B22;
+    text-decoration: none;
+}
+
+.pf:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+
+}
+
+.pf:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.pf:hover {
+    color:#FC4B22;
+    text-decoration: none;
+}
+
+.wk:link{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.wk:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.wk:hover{
+    color: #FC4B22;
+    text-decoration: none;
+}
+
+
+
+
+#logo{
+    position: absolute;
+    top: 116px;
+    left:100px;
+    display: flex;
+}
+
+/* 이미지 회전 애니메이션 */
+.rotating-image {
+    width: 150px; /* 이미지 너비 */
+    height: auto; /* 비율 유지 */
+    animation: rotate 7s linear infinite; /* 5초마다 한 바퀴 회전 */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+#dcu{
+    width: 250px;
+    height: 55px;
+    position: absolute;
+    top: 116px;
+    right: 30px;
+    font-size: 24px;
+    font-family: noto;
+}
+
+
+#text{
+    width: 800px;
+    height: 192.4px;
+    position: absolute;
+    top: 450px;
+    right: 150px;
+    font-size: 100px;
+    font-family: big;
+}
+
+#arrow {
+    position: absolute;
+    width: 132px;
+    height: 65px;
+    top: 325px;
+    right: 810px;
+  }
+
+.size{
+    transform: scale(1.2) rotate(360deg);
+}
+
+/* 마우스를 올렸을 때 이미지 커짐 */
+.enlarging-image {
+    width: 150px; /* 이미지 너비 */
+    height: auto; /* 비율 유지 */
+    transition: transform 0.3s ease; /* 크기 변경 시 부드러운 트랜지션 */
+}
+
+.enlarging-image:hover {
+    transform: scale(1.2); /* 이미지 1.2배 확대 */
+}
+
+
+
+
+#puter{
+    width: 100%;
+    height: 320px;
+    position: relative;
+    display: block;
+    flex-direction: row;
+    bottom: -900px;
+    right: 0px;
+    padding-left: 100px;
+    padding-top: 75px;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    font-family: noto;
+    font-size: 12px;
+}
+
+
+.put {
+    color: white;
+    font-family: lex;
+    font-size: 32px;
+    margin-bottom: 135px;
+    
+  }
+
+#line3{
+    position: absolute;
+    width: 1325px;
+    height: 0px;
+    bottom: 132px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.ins{
+    position: absolute;
+    display: inline-flex;
+    width: 43px;
+    height: 43px;
+    bottom: 200px;
+    right:100px;
+}
+
+
+
+
+
+
+
+
+/* 미디어 쿼리: 768px 이상 */
+@media (max-width: 768px) {
+    #viewport {
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        display: inline;
+        top: 0px;
+        left: 0px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+        background-color: white;
+        font-family: noto;
+    }
+
+    .item {
+        font-size: 24px; 
+        left: 30px; 
+    }
+
+    #menu {
+        font-size: 16px;
+        right: 30px;
+    }
+
+    #menu > p{
+        margin-left: 30px;
+    }
+     /*여기까지 뷰포트*/
+
+
+    #dcu{
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 116px;
+        right: 30px;
+        font-size: 16px;
+        font-family: noto;
+    }
+
+    #logo{
+        position: absolute;
+        display: flex;
+        top: 116px;
+        left:30px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #text{
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 400px;
+        right: 30px;
+        font-size: 60px;
+        font-family: big;
+    }
+
+    #arrow {
+        position: absolute;
+        width: 101.53846153846153px;
+        height: 50px;
+        top: 325px;
+        right: 425px;
+      }
+
+
+    /*여기부터 푸터*/ 
+    #puter{
+        width: 100%;
+        height: 320px;
+        position: relative;
+        display: block;
+        flex-direction: row;
+        bottom: -725px;
+        right: 0PX;
+        padding-left: 30px;
+        padding-top: 75px;
+        background-color: rgb(0, 0, 0);
+        color:white;
+        font-family: noto;
+        font-size: 12px;
+    }
+    
+    .put {
+        color: white;
+        font-family: lex;
+        font-size: 24px;
+        margin-bottom: 135px;
+        
+      }
+    
+    #line3{
+        position: absolute;
+        width: 678px;
+        height: 0px;
+        bottom: 132px;
+        border: 1px solid rgb(255, 255, 255);
+    }
+    
+    .ins{
+        position: absolute;
+        display: inline-flex;
+        width: 24px;
+        height: 24px;
+        bottom: 214px;
+        right: 30px;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 320px) {
+    #viewport {
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        display: inline;
+        top: 0px;
+        left: 0px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+        background-color: white;
+        font-family: noto;
+    }
+
+    .item {
+        font-size: 12px; 
+        left: 20px; 
+    }
+
+    #menu {
+        display: inline;
+        font-size: 8px;
+        right: 30px;
+    }
+
+    #menu > p{
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+     /*여기까지 뷰포트*/
+
+    #dcu{
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        font-size: 16px;
+        font-family: noto;
+    }
+
+    #logo{
+        position: absolute;
+        display: flex;
+        top: 75px;
+        left: 10px;
+        width: 150px;
+        height: 150px;
+    }
+
+    #text{
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 320px;
+        right: 10px;
+        font-size: 32px;
+        font-family: big;
+    }
+
+    #arrow {
+        position: absolute;
+        width: 101.53846153846153px;
+        height: 50px;
+        top: 250px;
+        right: 30px;
+      }
+
+
+
+    /*여기부터 푸터*/ 
+    #puter{
+        width: 100%;
+        height: 100px;
+        position: relative;
+        display: block;
+        flex-direction: row;
+        bottom: -450px;
+        right: 0PX;
+        padding-left: 20px;
+        padding-top: 25px;
+        background-color: rgb(0, 0, 0);
+        color:white;
+        font-family: noto;
+        font-size: 6px;
+    }
+    
+    .put {
+        color: white;
+        font-family: lex;
+        font-size: 12px;
+        margin-bottom: 30px;
+        
+      }
+    
+    #line3{
+        position: absolute;
+        width: 280px;
+        height: 0px;
+        bottom: 40px;
+        border: 1px solid rgb(255, 255, 255);
+    }
+    
+    .ins{
+        position: absolute;
+        display: inline-flex;
+        width: 12px;
+        height: 12px;
+        bottom: 60px;
+        right: 20px;
+    }
+    
+}
